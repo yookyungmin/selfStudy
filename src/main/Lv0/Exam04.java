@@ -1,4 +1,6 @@
 package main.Lv0;
+
+//세균증식
 class Solution4 {
     public int solution(int n, int t) {
 
