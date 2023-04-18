@@ -28,5 +28,7 @@ public class StringSort {
         Solution17 s = new Solution17();
 
         System.out.println(s.solution("asdsd215846"));
+        char a = '0';
+        System.out.println(a+"b");
     }
 }
