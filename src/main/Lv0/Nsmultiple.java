@@ -21,8 +21,6 @@ class Solution20 {
 public class Nsmultiple {
     public static void main(String[] args) {
         Solution20 s = new Solution20();
-
         System.out.println(s.solution(54562, 2));
-
     }
 }
