@@ -16,6 +16,7 @@ class Solution5 {
         String answer = "";
 
         HashMap<String, Integer> map = new HashMap<>();
+
         for (String player : participant)
             map.put(player, map.getOrDefault(player, 0) + 1);//player가 없으면 0 +1 있으면player+1
         //1.HashMap을 만든다 (participant)
