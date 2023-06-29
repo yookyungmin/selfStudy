@@ -25,6 +25,26 @@ class Solution41 {
         return answer;
     }
 }
+class Solution42{
+    public static int[] solution42(String s){
+        int[] answer = new int[s.length()];
+
+        answer[0] = -1; //멘처음 글자는 무조건 -1
+
+        for(int i = 1; i<s.length(); i++){
+            int x = s.lastIndexOf(s.substring(i, i+1), i - 1); //i-1 기준으로 있는지 없는지 확인
+            //lastIndexOf는 오른쪽 즉 뒤에서부터 문자열을 찾을때 사용하는 메서드
+            if(x != -1){
+                answer[i] = i-x //x가 -1 이 아니면 기존 위치의 인덱스에서 존재하는 인덱스의 값을 뺴서 넣으면 된다
+;            }else{
+                answer[i] = x; //x값이 -1 이면 -1 을 넣고
+            }
+        }
+        return answer;
+    }
+
+}
+
 public class CloseString {
     public static void main(String[] args) {
         Solution41 s = new Solution41();
@@ -34,3 +54,5 @@ public class CloseString {
         System.out.println(s.solution(str));
     }
 }
+
+
