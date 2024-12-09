@@ -26,10 +26,10 @@ public class Dfs  {
         visited = new boolean[n+1]; //n+1 사이즈로 선언한 이유는 0번을 쓰지 않기에
          A = new ArrayList[n+1]; //
 
-        for(int i = 1; i<n+1; i++){ //n의 갯수, 갯수만큼 반복문 구하기
+        for(int i = 1; i<n+1; i++){ //n의 갯수, 갯수만큼 반복문 구하기 0번 인덱스 안쓰기에 n+1
             A[i] = new ArrayList<>(); //A인접리스트의 각 ArrayList초기화하기
         }
-        for(int i = 1; i<m; i++){  //m의갯수 엣지 갯수만크맙ㄴ복문
+        for(int i = 1; i<m; i++){  //m의갯수 엣지 갯수만큼 반복문
             st = new StringTokenizer(br.readLine());
             int s = Integer.parseInt(st.nextToken()); //시작점
             int e = Integer.parseInt(st.nextToken()); //종료점

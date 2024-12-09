@@ -14,11 +14,11 @@ class Solution56 {
     public int solution(int n, int m, int[] section) {
         int answer = 0;
 
-        int start = section[0];
+        int start = section[0]; // 0인덱스 값을 start로
         answer++;
 
         for (int item : section) {
-            if (start + m > item) {
+            if (start + m > item) {  // 더 해준값이 item보다 큰 경우 
                 continue;
             }
 
