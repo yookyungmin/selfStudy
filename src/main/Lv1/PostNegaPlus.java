@@ -18,6 +18,13 @@ public class PostNegaPlus {
         for(int i = 0; i< absolutes.length; i++){
             answer += absolutes[i];
         }
+
+        /*
+         for(int i =0; i< signs.length; i++){
+            answer += absolutes[i] * (signs[i] ? 1: -1);
+         }
+         return answer // 다른 사람의 코드 //삼항 연산자로 사용해 true면 1을 곱하고 false면 -1을 곱해서 처리,.
+         */
         return answer;
     }
 }
