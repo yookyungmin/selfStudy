@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StreamAssi {
+public class sdsdsds {
     public static void main(String[] args) {
         //list 생성
         List<String> list = Arrays.asList("apple", "banna", "cherry", "date", "elderberry");
