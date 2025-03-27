@@ -17,5 +17,9 @@ public class StreamAssi {
                 .collect(Collectors.toList());
 
         System.out.println(result);
+
+        /**
+         * git reset 테스트
+         */
     }
 }
