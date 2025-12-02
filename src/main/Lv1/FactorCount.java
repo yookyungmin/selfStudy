@@ -23,6 +23,7 @@ class Solution34 {
                 answer -= i;
             }
         }
+
         return answer;
     }
 }

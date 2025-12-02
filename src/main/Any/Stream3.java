@@ -12,7 +12,7 @@ public class Stream3 {
         }
 
         long startTime = System.currentTimeMillis();
-    
+
         list.stream()
                 .map(x -> x * x)
                 .forEach(x ->{
